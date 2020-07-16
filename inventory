@@ -1,0 +1,10 @@
+[mons]
+storage01
+storage02
+storage03
+
+[osds]
+storage01
+storage02
+storage03
+

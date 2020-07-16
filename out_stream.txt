@@ -1,0 +1,10 @@
+control01
+control02
+control03
+compute01
+network01
+storage01
+storage02
+storage03
+
+
