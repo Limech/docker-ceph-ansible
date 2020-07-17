@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update
-RUN apt-get install -y git python-dev libffi-dev gcc libssl-dev python-selinux python-setuptools openssh-client vim
+RUN apt-get install -y git python-dev python-netaddr libffi-dev gcc libssl-dev python-selinux python-setuptools openssh-client vim
 
 RUN apt-get install -y python-pip
 RUN pip install ansible==2.9.10
@@ -18,7 +18,7 @@ COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 
 ## Ceph configs
-RUN cp /opt/ceph-ansible/site.yml.sample /opt/ceph-ansible/site.yml
+RUN cp /opt/ceph-ansible/site-container.yml.sample /opt/ceph-ansible/site-container.yml
 
 
 WORKDIR /opt/ceph-ansible/

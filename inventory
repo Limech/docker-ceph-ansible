@@ -8,3 +8,5 @@ storage01
 storage02
 storage03
 
+[grafana-server]
+storage01

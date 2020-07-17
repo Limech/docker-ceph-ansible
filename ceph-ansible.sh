@@ -14,4 +14,4 @@ done
 }
 
 
-docker run --rm -it $(add_hosts) -e UID=$(id -u) -e GID=$(id -g) -v ~/.ssh/id_rsa:/root/.ssh/id_rsa -v ~/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub  -v ${PWD}/ceph/all.yml:/opt/ceph-ansible/group_vars/all.yml -v ${PWD}/inventory:/opt/ceph-ansible/inventory ceph:test $cmd
+docker run --rm -it $(add_hosts) -e UID=$(id -u) -e GID=$(id -g) -v ~/.ssh/id_rsa:/root/.ssh/id_rsa -v ~/.ssh/id_rsa.pub:/root/.ssh/id_rsa.pub -v ${PWD}/ceph/osds.yml:/opt/ceph-ansible/group_vars/osds.yml -v ${PWD}/ceph/all.yml:/opt/ceph-ansible/group_vars/all.yml -v ${PWD}/inventory:/opt/ceph-ansible/inventory ceph:test $cmd

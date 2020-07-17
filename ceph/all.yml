@@ -1,9 +1,13 @@
 ceph_origin: repository
+containerized_deployment: true
 ceph_repository: community
 ceph_stable_release: octopus
 public_network: "10.0.20.0/24"
 cluster_network: "10.0.30.0/24"
 monitor_interface: "enp0s16"
+journal_size: 1024
+dashboard_admin_password: "P@ssw0rd"
+grafana_admin_password: "P@ssw0rd"
 devices:
   - '/dev/sdb'
   - '/dev/sdc'
