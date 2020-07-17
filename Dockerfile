@@ -12,7 +12,7 @@ RUN mkdir -p /etc/ansible && echo "[defaults]\nhost_key_checking=False\npipelini
 
 WORKDIR  /opt/
 
-RUN git clone https://github.com/ceph/ceph-ansible.git && cd ceph-ansible && git checkout stable-5.0
+RUN git clone https://github.com/ceph/ceph-ansible.git && cd ceph-ansible && git checkout stable-4.0
 
 COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
