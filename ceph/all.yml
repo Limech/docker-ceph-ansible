@@ -2,7 +2,7 @@ ceph_origin: repository
 containerized_deployment: true
 ceph_repository: community
 ceph_stable_release: nautilus
-public_network: "172.28.128.0/24"
+public_network: "10.0.20.0/24"
 cluster_network: "10.0.30.0/24"
 monitor_interface: "enp0s10"
 journal_size: 1024
