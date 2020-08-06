@@ -1,7 +1,7 @@
 [mons]
-storage01 network_address=10.0.20.54 
-storage02 network_address=10.0.20.55
-storage03 network_address=10.0.20.56
+storage01 network_address=172.28.128.57 
+storage02 network_address=172.28.128.58
+storage03 network_address=172.28.128.59
 
 [osds]
 storage01
